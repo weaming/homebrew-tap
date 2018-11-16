@@ -7,8 +7,4 @@ cask 'tabular' do
   url 'http://192.168.3.166:8000/s/tabular'
 
   # app ''
-  def install
-      system "ls"
-      system "pwd"
-  end
 end
