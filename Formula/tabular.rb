@@ -1,15 +1,12 @@
 class Tabular < Formula
-  version :latest
-  sha256 :no_check
-
   desc "Parse 2d tabular data bettwen YAML, JSON, CSV"
   homepage "https://github.com/weaming/tablib"
-  url "https://github.com/weaming/tablib/archive/0.1.1.tar.gz" # TODO
+  url "https://github.com/weaming/tablib/files/2591690/tabular-0.1.0.zip"
 
   version "0.1.0"
-  sha256 "aeebacbfafb76c13f354fb411386d2d09c2d0ae0c9457cc4e9fc40e0cf1a829d" # TODO
+  sha256 "38977a7d3b2c413b4deb031d0075484d04e2b333d190f605b107862bdbfe77e3"
 
   def install
-    bin.install "dist/mac/tabular"
+    bin.install "dist/tabular"
   end
 end
