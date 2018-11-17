@@ -7,6 +7,6 @@ class Tabular < Formula
   sha256 "38977a7d3b2c413b4deb031d0075484d04e2b333d190f605b107862bdbfe77e3"
 
   def install
-    bin.install "dist/tabular"
+    bin.install "tabular"
   end
 end
