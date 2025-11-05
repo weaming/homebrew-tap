@@ -1,5 +1,5 @@
 class Libraw < Formula
-  desc "Library for reading RAW files from digital photo cameras"
+  desc "Library for reading RAW files from digital photo cameras, including Sigma Foveon X3F!"
   homepage "https://www.libraw.org/"
   url "https://www.libraw.org/data/LibRaw-0.21.4.tar.gz"
   sha256 "6be43f19397e43214ff56aab056bf3ff4925ca14012ce5a1538a172406a09e63"
@@ -33,6 +33,10 @@ class Libraw < Formula
         "ac_cv_prog_c_openmp=-Xpreprocessor -fopenmp",
         "ac_cv_prog_cxx_openmp=-Xpreprocessor -fopenmp",
         "LDFLAGS=-lomp",
+
+        # Foveon X3F support changed: it is supported only if USE_X3FTOOLS defined at build.
+        # https://www.libraw.org/news/libraw-0-20-2-Release
+        # https://www.libraw.org/node/2657
         "CFLAGS=-O3 -DUSE_X3FTOOLS",
         "CXXFLAGS=-O3 -DUSE_X3FTOOLS",
       ]
